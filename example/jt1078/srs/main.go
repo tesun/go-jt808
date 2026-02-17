@@ -7,7 +7,7 @@ import (
 	"log/slog"
 	"os"
 	"os/signal"
-	"srs/internal"
+	"srs-jt1078/internal"
 	"syscall"
 )
 

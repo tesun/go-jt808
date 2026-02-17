@@ -273,3 +273,26 @@ hook.on_stream_not_found=http://127.0.0.1:17002/api/v1/on_stream_not_found
 用户访问http://124.221.30.46:80/rtp/1004-1-1078.live.mp4
 当流不存在的时候 主动下发9101让这个流存在
 ```
+
+<h2 id="srs"> 6. srs </h2>
+
+- 部署srs https://github.com/ossrs/srs
+
+
+```
+cd ./example/jt1078/srs
+GOOS=linux GOARCH=amd64 go build
+nohup ./srs-jt1078 &
+
+cd ./example/jt1078/srs/jt808
+GOOS=linux GOARCH=amd64 go build
+nohup ./srs-jt808 &
+
+```
+
+- 可以在srs默认的控制台页面查看当前播放的流
+
+```
+# 如部署在101.35.2.3机器上
+http://101.35.2.3:8080/console/ng_index.html#/streams?port=1985&schema=http&host=101.35.2.3
+```

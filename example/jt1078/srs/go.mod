@@ -1,4 +1,4 @@
-module srs
+module srs-jt1078
 
 go 1.25.0
 
