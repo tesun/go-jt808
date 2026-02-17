@@ -1,0 +1,15 @@
+realtime: # 实时视频
+  enable: true
+  address: "0.0.0.0:1078"
+  # 默认流名称是realtime-sim卡号-通道号 如：realtime-1001-1
+  srs_whip_url_prefix: "http://101.35.2.3:1985/rtc/v1/whip/?app=live&stream=realtime"
+  on_join_url: "http://127.0.0.1:12000/api/v1/jt808/event/real-time-join"
+  on_leave_url: "http://127.0.0.1:12000/api/v1/jt808/event/real-time-leave"
+
+playback: # 回放视频
+  enable: true
+  address: "0.0.0.0:1079"
+  # 默认流名称是playback-sim卡号-通道号 如：playback-1001-1
+  srs_whip_url_prefix: "http://101.35.2.3:1985/rtc/v1/whip/?app=live&stream=playback"
+  on_join_url: "http://127.0.0.1:12000/api/v1/jt808/event/playback-join"
+  on_leave_url: "http://127.0.0.1:12000/api/v1/jt808/event/playback-leave"

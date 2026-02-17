@@ -6,13 +6,13 @@ import (
 	"github.com/cuteLittleDevil/go-jt808/protocol/jt808"
 	"github.com/cuteLittleDevil/go-jt808/protocol/model"
 	"github.com/go-resty/resty/v2"
+	"gopkg.in/natefinch/lumberjack.v2"
 	"os"
 	"path/filepath"
 	"time"
 
 	"github.com/cuteLittleDevil/go-jt808/attachment"
 	"github.com/cuteLittleDevil/go-jt808/shared/consts"
-	"github.com/natefinch/lumberjack"
 	"github.com/spf13/viper"
 	"log/slog"
 )

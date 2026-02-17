@@ -108,7 +108,7 @@ func (j *adapterServer) readPacket(conn *net.TCPConn) {
 				if rtps, err := j.toGB28181er.ConvertToGB28181(effectData); err != nil {
 					slog.Error("convert to gb28181 packet fail",
 						slog.String("address", conn.RemoteAddr().String()),
-						slog.String("data", fmt.Sprintf("%x", data)),
+						slog.String("data", fmt.Sprintf("%x", effectData)),
 						slog.Any("err", err))
 					return
 				} else {

@@ -6,14 +6,13 @@ require (
 	github.com/cuteLittleDevil/go-jt808/attachment v0.4.0
 	github.com/cuteLittleDevil/go-jt808/protocol v1.16.0
 	github.com/cuteLittleDevil/go-jt808/shared v1.6.0
-	github.com/cuteLittleDevil/go-jt808/terminal v1.2.0
-	github.com/go-resty/resty/v2 v2.16.5
-	github.com/natefinch/lumberjack v2.0.0+incompatible
+	github.com/cuteLittleDevil/go-jt808/terminal v1.3.0
+	github.com/go-resty/resty/v2 v2.17.1
 	github.com/spf13/viper v1.21.0
+	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 )
 
 require (
-	github.com/BurntSushi/toml v1.5.0 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
@@ -27,6 +26,4 @@ require (
 	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/sys v0.38.0 // indirect
 	golang.org/x/text v0.31.0 // indirect
-	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
